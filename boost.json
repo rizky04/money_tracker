@@ -1,0 +1,17 @@
+{
+    "agents": [
+        "gemini",
+        "amp"
+    ],
+    "guidelines": true,
+    "mcp": true,
+    "nightwatch_mcp": false,
+    "sail": false,
+    "skills": [
+        "ai-sdk-development",
+        "laravel-best-practices",
+        "socialite-development",
+        "pest-testing",
+        "tailwindcss-development"
+    ]
+}
