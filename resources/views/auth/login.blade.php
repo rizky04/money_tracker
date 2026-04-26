@@ -36,6 +36,30 @@
             </button>
         </form>
 
+         <form id="register-form" method="POST" action="{{ route('register') }}" class="hidden space-y-5">
+            @csrf
+            <div class="space-y-4">
+                <div class="bg-white p-4 rounded-2xl border border-gray-100 shadow-sm">
+                    <label class="text-[10px] font-bold text-gray-400 uppercase">Nama Lengkap</label>
+                    <input type="text" name="name" value="{{ old('name') }}" required class="w-full bg-transparent font-medium focus:outline-none py-1 border-none focus:ring-0">
+                </div>
+                <div class="bg-white p-4 rounded-2xl border border-gray-100 shadow-sm">
+                    <label class="text-[10px] font-bold text-gray-400 uppercase">Email</label>
+                    <input type="email" name="email" value="{{ old('email') }}" required class="w-full bg-transparent font-medium focus:outline-none py-1 border-none focus:ring-0">
+                    @error('email') <p class="text-red-500 text-[10px] mt-1 font-bold">{{ $message }}</p> @enderror
+                </div>
+                <div class="bg-white p-4 rounded-2xl border border-gray-100 shadow-sm">
+                    <label class="text-[10px] font-bold text-gray-400 uppercase">Kata Sandi</label>
+                    <input type="password" name="password" required class="w-full bg-transparent font-medium focus:outline-none py-1 border-none focus:ring-0">
+                </div>
+                <div class="bg-white p-4 rounded-2xl border border-gray-100 shadow-sm">
+                    <label class="text-[10px] font-bold text-gray-400 uppercase">Konfirmasi Sandi</label>
+                    <input type="password" name="password_confirmation" required class="w-full bg-transparent font-medium focus:outline-none py-1 border-none focus:ring-0">
+                </div>
+            </div>
+            <button type="submit" class="w-full bg-gas-green text-white font-black py-4 rounded-2xl shadow-lg active:scale-[0.98] transition-transform">BUAT AKUN</button>
+        </form>
+
         <div class="relative my-8 text-center">
             <span class="bg-gray-50 px-4 text-xs text-gray-400 font-bold uppercase relative z-10">Atau gunakan</span>
             <div class="absolute top-1/2 left-0 w-full h-[1px] bg-gray-200"></div>
