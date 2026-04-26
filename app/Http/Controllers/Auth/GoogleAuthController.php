@@ -29,7 +29,7 @@ class GoogleAuthController extends Controller
 
             Auth::login($user);
 
-            return redirect()->intended(route('dashboard'));
+            return redirect()->intended(route('money.index'));
         } catch (\Exception $e) {
             return redirect()->route('login')->with('error', 'Gagal login via Google');
         }

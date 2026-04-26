@@ -23,9 +23,9 @@ Route::get('auth/google', [GoogleAuthController::class, 'redirect'])->name('goog
 Route::get('auth/google/callback', [GoogleAuthController::class, 'callback']);
 
 // Ubah route dashboard menjadi seperti ini:
-Route::get('/dashboard', [DashboardController::class, 'index'])
-    ->middleware(['auth', 'verified'])
-    ->name('dashboard');
+// Route::get('/dashboard', [DashboardController::class, 'index'])
+//     ->middleware(['auth', 'verified'])
+//     ->name('dashboard');
 
 Route::middleware('auth')->group(function () {
 
