@@ -57,7 +57,7 @@
                     <input type="password" name="password_confirmation" required class="w-full bg-transparent font-medium focus:outline-none py-1 border-none focus:ring-0">
                 </div>
             </div>
-            <button type="submit" class="w-full bg-gas-green text-white font-black py-4 rounded-2xl shadow-lg active:scale-[0.98] transition-transform">BUAT AKUN</button>
+            <button type="submit"  class="w-full bg-gradient-to-r from-blue-500 to-blue-700 text-white font-black py-4 rounded-2xl shadow-lg shadow-blue-200 active:scale-[0.98] transition-transform">BUAT AKUN</button>
         </form>
 
         <div class="relative my-8 text-center">
